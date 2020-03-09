@@ -4,10 +4,10 @@ import './App.css';
 
 class App extends Component {
   constructor() {
-    super()
+    super();
 
     this.state = {
-      'string': 'Hello Kwessi Annor'
+      string: 'Hi Kwessi!'
     }
   }
 
@@ -18,9 +18,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             {this.state.string}
-        </p>
-         
-        <button onClick={() => this.setState({string: "Hello World!"})}>Change Text</button>
+          </p>
+          
+          <button onClick={() => {this.setState({string: 'Hello World!'})}}>Change Text</button>
         </header>
       </div>
     );
