@@ -2,6 +2,7 @@
   width: 85vw;
   margin: 2rem auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(17rem, min-content));
   grid-gap: 20px;
+  justify-content: center;
 }

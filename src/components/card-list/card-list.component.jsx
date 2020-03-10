@@ -10,7 +10,7 @@ const cardList = (props) => {
     <section className="card-list">
       {
         props.monsters.map(monster => (
-          <Card key={monster.key} monster={monster}/>
+          <Card key={monster.id} monster={monster}/>
         ))
       }
     </section>
