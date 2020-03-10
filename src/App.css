@@ -13,26 +13,28 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+:root {
+  --primary-color: #0ccac4;
+}
+
+.App {
   align-items: center;
+}
+
+h1 {
+  font-family: 'Bigelow Rules', cursive;
+  font-size: 4.5rem;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1::after {
+  content: '';
+  background-color: var(--primary-color);
+  height: 3px;
+  width: 25vmin;
+  margin-top: 20px;
 }
