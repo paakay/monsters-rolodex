@@ -14,8 +14,8 @@ const SearchBox = ({ placeholder, handleChange }) => {
         name="search-box"
         type="search"
         className="search-box" 
-        placeholder={placeholder} 
-        onChange={handleChange}
+        placeholder={ placeholder } 
+        onChange={ handleChange }
         aria-describedby="search-box-hint"
       />
     </div>

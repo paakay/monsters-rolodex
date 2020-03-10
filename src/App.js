@@ -15,6 +15,12 @@ class App extends Component {
       monsters: [],
       searchField: '',
     }
+
+    this.handleChange = this.handleChange.bind(this)
+  }
+
+  handleChange(e) {
+    this.setState({ searchField: e.target.value })
   }
 
   // Grab users data from jsonplaceholder.com API
@@ -32,14 +38,9 @@ class App extends Component {
 
     return (
       <div className="App">
-        {/* <input
-          type="search"
-          placeholder="Search monsters"
-          onChange={e => this.setState({ searchField: e.target.value })}
-        /> */}
         <SearchBox
           placeholder="Search monsters" 
-          handleChange={e => this.setState({ searchField: e.target.value })}
+          handleChange={this.handleChange}
         />
         <CardList monsters={ filteredMonster } />
       </div>
